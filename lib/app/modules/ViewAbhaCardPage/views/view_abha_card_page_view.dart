@@ -147,8 +147,8 @@ class ViewAbhaCardPageView extends GetView<ViewAbhaCardPageController> {
               child: Row(
                 children: [
                   Container(
-                      height: 20,
-                      width: 80,
+                      height: 30,
+                      width: 100,
                       decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),color: Colors.white),
                       child: Center(
                         child: Text("MY ABHA",style: TextStyle(
@@ -158,8 +158,8 @@ class ViewAbhaCardPageView extends GetView<ViewAbhaCardPageController> {
                   Icon(Icons.qr_code,color: Colors.white,size: 30,),
                   SizedBox(width: 8,),
                   Container(
-                    height: 20,
-                    width: 80,
+                    height: 30,
+                    width: 100,
                     decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),color: Colors.white),
                       child: Center(
                         child: Text("View QR",style: TextStyle(
@@ -171,7 +171,7 @@ class ViewAbhaCardPageView extends GetView<ViewAbhaCardPageController> {
            SizedBox(height: 20,),
 
            Padding(
-             padding: const EdgeInsets.symmetric(horizontal: 12.0),
+             padding: const EdgeInsets.symmetric(horizontal: 15.0),
              child: Container(
                decoration: BoxDecoration(borderRadius: BorderRadius.circular(05), color: Colors.white,),
                height: 218,
@@ -182,7 +182,7 @@ class ViewAbhaCardPageView extends GetView<ViewAbhaCardPageController> {
                      SizedBox(height: 10,),
                      Image.asset("assets/images/userdisha1.png",height: 70,width: 70,),
                      SizedBox(height: 7,),
-                     Text("MR.  Jatin Kumar",style: TextStyle(fontWeight: FontWeight.bold),),
+                     Text("Mr.  Jatin Kumar",style: TextStyle(fontWeight: FontWeight.bold),),
                      SizedBox(height: 7,),
 
                      Text("AGE:25,Male"),
@@ -254,14 +254,15 @@ class ViewAbhaCardPageView extends GetView<ViewAbhaCardPageController> {
                                      Row(
                                        mainAxisAlignment: MainAxisAlignment.start,
                                        children: [
-                                         Text("MR.Jatin Kumar",style: TextStyle(
+                                         Text("Mr.Jatin Kumar",style: TextStyle(
                                              fontWeight: FontWeight.bold,fontSize: 14),
                                              textAlign:TextAlign.start),
                                        ],
                                      ),
                                      SizedBox(height: 5,),
 
-                                     Text("AGE:25,Male", textAlign:TextAlign.start),
+                                     Text("AGE: 25",),
+                                     Text("Gender: Male",),
                                      SizedBox(height: 5,),
 
                                      Text("Mobile : 9090990909"),
