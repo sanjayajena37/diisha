@@ -183,21 +183,27 @@ class NCDScreeningPageView extends GetView<NCDScreeningPageController> {
           SizedBox(
             height: 20,
           ),
-          Container(
-            width: 400,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(6.0),
-              color: Colors.white,
-              shape: BoxShape.rectangle
-            ),
-            child: TextField(
-              controller: nameController,
-              //textAlign: TextAlign. center,
-              decoration: const InputDecoration(
-                contentPadding: EdgeInsets.only(left: 15.0, right: 15.0),
-                //suffixIcon: Icon(Icons.search),
-                hintText: 'Search Patient',
-                hintStyle: TextStyle(fontSize: 18),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 3.0),
+            child: Container(
+
+              height: 45,
+              width: double.maxFinite,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(6.0),
+                color: Colors.white,
+                shape: BoxShape.rectangle
+              ),
+              child: TextField(
+                controller: nameController,
+                cursorColor: Colors.teal,
+                //textAlign: TextAlign. center,
+                decoration: const InputDecoration(
+                  contentPadding: EdgeInsets.only(left: 15.0, right: 15.0),
+                  //suffixIcon: Icon(Icons.search),
+                  hintText: 'Search Patient',
+                  hintStyle: TextStyle(fontSize: 18),
+                ),
               ),
             ),
           ),
