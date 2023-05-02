@@ -81,9 +81,17 @@ class ViewAbhaCardPageView extends GetView<ViewAbhaCardPageController> {
                     // backgroundColor: AppData.orangeColor
                   ),
                   BottomNavigationBarItem(
-                    icon: Icon(
-                      Icons.chat,color: Colors.white,
-                        size: 25,
+                    icon: InkWell(
+                      onTap: () {
+                        Get.toNamed(
+                          Routes
+                              .N_C_D_SCREENING_PAGE,
+                        );
+                      },
+                      child: Icon(
+                        Icons.chat,color: Colors.white,
+                          size: 25,
+                      ),
                     ),
                     label: '',
                     // backgroundColor: AppData.orangeColor
@@ -134,15 +142,34 @@ class ViewAbhaCardPageView extends GetView<ViewAbhaCardPageController> {
               ),
             ),
             SizedBox(height: 30,),
-            Row(
-              children: [
-                Text("ABHA REGISTRATION",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
-                Spacer(),
-                Icon(Icons.arrow_back_rounded,),
-                Text("ABHA REGISTRATION",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
-              ],
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: Row(
+                children: [
+                  Container(
+                      height: 20,
+                      width: 80,
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),color: Colors.white),
+                      child: Center(
+                        child: Text("MY ABHA",style: TextStyle(
+                          color: Colors.teal,fontWeight: FontWeight.bold,),),
+                      )),
+                  Spacer(),
+                  Icon(Icons.qr_code,color: Colors.white,size: 30,),
+                  SizedBox(width: 8,),
+                  Container(
+                    height: 20,
+                    width: 80,
+                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),color: Colors.white),
+                      child: Center(
+                        child: Text("View QR",style: TextStyle(
+                          color: Colors.teal,fontWeight: FontWeight.bold,),),
+                      )),
+                ],
+              ),
             ),
-
+           SizedBox(height: 20,),
+           Image.asset("assets/images/userdisha1.png",height: 50,width: 50,)
           ],
         ),
       ),
