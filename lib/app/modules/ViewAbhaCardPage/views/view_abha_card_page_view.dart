@@ -169,7 +169,162 @@ class ViewAbhaCardPageView extends GetView<ViewAbhaCardPageController> {
               ),
             ),
            SizedBox(height: 20,),
-           Image.asset("assets/images/userdisha1.png",height: 50,width: 50,)
+
+           Padding(
+             padding: const EdgeInsets.symmetric(horizontal: 12.0),
+             child: Container(
+               decoration: BoxDecoration(borderRadius: BorderRadius.circular(05), color: Colors.white,),
+               height: 218,
+                 width: double.maxFinite,
+
+                 child: Column(
+                   children: [
+                     SizedBox(height: 10,),
+                     Image.asset("assets/images/userdisha1.png",height: 70,width: 70,),
+                     SizedBox(height: 7,),
+                     Text("MR.  Jatin Kumar",style: TextStyle(fontWeight: FontWeight.bold),),
+                     SizedBox(height: 7,),
+
+                     Text("AGE:25,Male"),
+                     SizedBox(height: 7,),
+
+                     Text("Mobile No: 9090990909"),
+                     SizedBox(height: 7,),
+
+                     Text("Bbsr, Khordha,India"),
+                     SizedBox(height: 7,),
+
+                     Text("ABHA ID: abcdefdfsv124324"),
+                     SizedBox(height: 10,),
+
+                   ],
+                 ),
+
+             ),
+           ),
+           SizedBox(height: 20,),
+           Padding(
+             padding: const EdgeInsets.symmetric(horizontal: 12.0),
+             child: Card(
+
+
+
+               child: Padding(
+                 padding: const EdgeInsets.only(top: 4.0,bottom: 5,left: 5,right: 3),
+                 child: Container(
+                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(05), color: Colors.white,
+                       border: Border.all(color: Colors.blueAccent)),
+                   height: 200,
+                   width: double.maxFinite,
+
+
+                     child: Center(
+                       child: Column(
+                         children: [
+
+                           Container(
+                             color: Colors.blueAccent,
+                             child: Padding(
+                               padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                               child: Row(
+                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                 children: [
+                                   Image.asset("assets/images/ndhm-logo.png",
+                                     height: 50,width: 50,color: Colors.white,),
+
+                                   Image.asset("assets/images/ndhm-logo.png",
+                                     height: 50,width: 50,color: Colors.white,),
+
+                                 ],
+                               ),
+                             ),
+                           ),
+                           SizedBox(height: 10,),
+                           Row(
+                             mainAxisAlignment: MainAxisAlignment.start,
+                             children: [
+                               Image.asset("assets/abhacard.jpg",height: 90,width: 80,),
+                               Padding(
+                                 padding: const EdgeInsets.only(left: 8.0),
+                                 child: Column(
+                                   crossAxisAlignment: CrossAxisAlignment.start,
+                                   mainAxisAlignment: MainAxisAlignment.start,
+                                   children: [
+                                     SizedBox(height: 7,),
+                                     Row(
+                                       mainAxisAlignment: MainAxisAlignment.start,
+                                       children: [
+                                         Text("MR.Jatin Kumar",style: TextStyle(
+                                             fontWeight: FontWeight.bold,fontSize: 14),
+                                             textAlign:TextAlign.start),
+                                       ],
+                                     ),
+                                     SizedBox(height: 5,),
+
+                                     Text("AGE:25,Male", textAlign:TextAlign.start),
+                                     SizedBox(height: 5,),
+
+                                     Text("Mobile : 9090990909"),
+                                     SizedBox(height: 5,),
+
+                                     Text("Bbsr, Khordha,India"),
+                                     SizedBox(height: 5,),
+
+                                     Text("ABHA ID: abcdefdfsv124"),
+                                     SizedBox(height: 10,),
+                                   ],
+                                 ),
+                               ),
+                               Padding(
+                                 padding: const EdgeInsets.only(left: 15.0),
+                                 child: Container(
+                                   height: 90,
+                                   width: 90,
+                                   decoration: BoxDecoration(border: Border.all(color: Colors.black)),
+                                   child: Icon(
+                                     Icons.qr_code_2,color: Colors.black
+                                     ,
+                                     size: 90,
+                                   ),
+                                 ),
+                               ),
+
+
+                             ],
+                           ),
+
+
+
+
+                         ],
+                       ),
+                     ),
+
+                 ),
+               ),
+             ),
+           ),
+
+
+
+
+            SizedBox(height:30),
+
+
+
+            Container(
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(30)),
+              height: 40,
+              width: 200,
+              child: Card( shape: RoundedRectangleBorder(borderRadius:BorderRadius.circular(30) ) ,
+                  elevation: 10,
+                  color: Colors.white,
+                  child: Center(
+                    child: Text("Close",style: TextStyle(fontSize: 14,
+                        fontWeight: FontWeight.bold,color: Colors.teal
+                    ),),
+                  )),
+            ),
           ],
         ),
       ),
