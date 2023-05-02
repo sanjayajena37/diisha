@@ -2,8 +2,12 @@ import 'package:get/get.dart';
 
 import '../modules/LoginPage/bindings/login_page_binding.dart';
 import '../modules/LoginPage/views/login_page_view.dart';
+import '../modules/NCDScreeningPage/bindings/n_c_d_screening_page_binding.dart';
+import '../modules/NCDScreeningPage/views/n_c_d_screening_page_view.dart';
 import '../modules/SplashScreen/bindings/splash_screen_binding.dart';
 import '../modules/SplashScreen/views/splash_screen_view.dart';
+import '../modules/ViewAbhaCardPage/bindings/view_abha_card_page_binding.dart';
+import '../modules/ViewAbhaCardPage/views/view_abha_card_page_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 
@@ -27,8 +31,18 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.LOGIN_PAGE,
-      page: () =>  LoginPageView(),
+      page: () => LoginPageView(),
       binding: LoginPageBinding(),
+    ),
+    GetPage(
+      name: _Paths.VIEW_ABHA_CARD_PAGE,
+      page: () => const ViewAbhaCardPageView(),
+      binding: ViewAbhaCardPageBinding(),
+    ),
+    GetPage(
+      name: _Paths.N_C_D_SCREENING_PAGE,
+      page: () => const NCDScreeningPageView(),
+      binding: NCDScreeningPageBinding(),
     ),
   ];
 }

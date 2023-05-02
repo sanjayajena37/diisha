@@ -6,6 +6,8 @@ abstract class Routes {
   static const HOME = _Paths.HOME;
   static const SPLASH_SCREEN = _Paths.SPLASH_SCREEN;
   static const LOGIN_PAGE = _Paths.LOGIN_PAGE;
+  static const VIEW_ABHA_CARD_PAGE = _Paths.VIEW_ABHA_CARD_PAGE;
+  static const N_C_D_SCREENING_PAGE = _Paths.N_C_D_SCREENING_PAGE;
 }
 
 abstract class _Paths {
@@ -13,4 +15,6 @@ abstract class _Paths {
   static const HOME = '/home';
   static const SPLASH_SCREEN = '/splash-screen';
   static const LOGIN_PAGE = '/login-page';
+  static const VIEW_ABHA_CARD_PAGE = '/view-abha-card-page';
+  static const N_C_D_SCREENING_PAGE = '/n-c-d-screening-page';
 }

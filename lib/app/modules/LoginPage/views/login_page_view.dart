@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
+import '../../../routes/app_pages.dart';
 import '../controllers/login_page_controller.dart';
 
 class LoginPageView extends GetView<LoginPageController> {
@@ -73,18 +74,26 @@ class LoginPageView extends GetView<LoginPageController> {
               ),
               SizedBox(height: MediaQuery.of(context).size.height*0.10,),
 
-              Container(
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(30)),
-                height: 40,
-                width: 200,
-                child: Card( shape: RoundedRectangleBorder(borderRadius:BorderRadius.circular(30) ) ,
-                    elevation: 10,
-                    color: Colors.teal,
-                    child: Center(
-                      child: Text("Log in",style: TextStyle(fontSize: 14,
-                          fontWeight: FontWeight.bold,color: Colors.white
-                      ),),
-                    )),
+              InkWell(
+             onTap: () {
+               Get.toNamed(
+                 Routes
+                     .VIEW_ABHA_CARD_PAGE,
+               );
+             },
+                child: Container(
+                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30)),
+                  height: 40,
+                  width: 200,
+                  child: Card( shape: RoundedRectangleBorder(borderRadius:BorderRadius.circular(30) ) ,
+                      elevation: 10,
+                      color: Colors.teal,
+                      child: Center(
+                        child: Text("Log in",style: TextStyle(fontSize: 14,
+                            fontWeight: FontWeight.bold,color: Colors.white
+                        ),),
+                      )),
+                ),
               ),
               SizedBox(height: 10,),
               Container(
