@@ -46,105 +46,105 @@ class NCDScreeningPageView extends GetView<NCDScreeningPageController> {
     return Scaffold(
 
       backgroundColor: Colors.teal,
-      bottomNavigationBar: Container(
-        height:MediaQuery.of(context).size.height*0.12,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-
-            BottomNavigationBar(
-              // currentIndex: selectedIndex,
-              // selectedItemColor:Colors.yellow  ,
-              showUnselectedLabels: true,
-              //fixedColor: Colors.deepPurple,
-              selectedItemColor: Colors.black,
-              unselectedItemColor: Colors.black,
-              backgroundColor:Colors.teal,
-              iconSize: 20,
-              onTap: (index) {
-                switch (index) {
-                  case 0:
-                    print('Navigate to profile');
-                    break;
-                  case 1:
-                    print('Navigate to profile');
-                    // Get.toNamed(
-                    //   //Routes.PAYMENT
-                    //
-                    //   //Routes.LOGIN_SCREEN,
-                    //
-                    //   Routes.ADD_TO_CART,
-                    // );
-                    break;
-                  case 2:
-                    print('Navigate to profile');
-                    // Get.toNamed(
-                    //   Routes
-                    //       .PROFILE,
-                    // );
-                    break;
-                }
-              },
-              selectedFontSize: 9,
-              unselectedFontSize: 9,
-              type: BottomNavigationBarType.fixed,
-              items: <BottomNavigationBarItem>[
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.home,color: Colors.white,size: 25,),
-                  label: '',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.drive_folder_upload,color: Colors.white,size: 25,),
-                  label: '',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(
-                      Icons.shopping_cart,color: Colors.white,
-                      size: 25),
-                  label: '',
-                  // backgroundColor: AppData.orangeColor
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.person,color: Colors.white,
-                    size: 25, ),///
-                  label: '',
-                  // backgroundColor: AppData.orangeColor
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.message,color: Colors.white,
-                    size: 25, ),///
-                  label: '',
-                  // backgroundColor: AppData.orangeColor
-                ),
-
-
-              ],
-            ),
-
-            //SizedBox(height: 10,),
-            Expanded(
-              child: Container(
-                color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 15.0),
-                  child: Row(
-                    children: [
-                      Text("DEVELOPED BY :",style: TextStyle(fontWeight: FontWeight.bold),),
-                      SizedBox(width: 20,),
-                      Image.asset("assets/images/logo diisha.png",height: 30,width: 100,),
-                      SizedBox(width: 20,),
-                      Image.asset("assets/images/Ehealthlogo.png",height: 30,width: 100,),
-                    ],
-                  ),
-                ),
-              ),
-            )
-
-          ],
-        ),
-      ),
+      // bottomNavigationBar: Container(
+      //   height:MediaQuery.of(context).size.height*0.12,
+      //   child: Column(
+      //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      //     children: [
+      //
+      //       BottomNavigationBar(
+      //         // currentIndex: selectedIndex,
+      //         // selectedItemColor:Colors.yellow  ,
+      //         showUnselectedLabels: true,
+      //         //fixedColor: Colors.deepPurple,
+      //         selectedItemColor: Colors.black,
+      //         unselectedItemColor: Colors.black,
+      //         backgroundColor:Colors.teal,
+      //         iconSize: 20,
+      //         onTap: (index) {
+      //           switch (index) {
+      //             case 0:
+      //               print('Navigate to profile');
+      //               break;
+      //             case 1:
+      //               print('Navigate to profile');
+      //               // Get.toNamed(
+      //               //   //Routes.PAYMENT
+      //               //
+      //               //   //Routes.LOGIN_SCREEN,
+      //               //
+      //               //   Routes.ADD_TO_CART,
+      //               // );
+      //               break;
+      //             case 2:
+      //               print('Navigate to profile');
+      //               // Get.toNamed(
+      //               //   Routes
+      //               //       .PROFILE,
+      //               // );
+      //               break;
+      //           }
+      //         },
+      //         selectedFontSize: 9,
+      //         unselectedFontSize: 9,
+      //         type: BottomNavigationBarType.fixed,
+      //         items: <BottomNavigationBarItem>[
+      //           BottomNavigationBarItem(
+      //             icon: Icon(Icons.home,color: Colors.white,size: 25,),
+      //             label: '',
+      //           ),
+      //           BottomNavigationBarItem(
+      //             icon: Icon(Icons.drive_folder_upload,color: Colors.white,size: 25,),
+      //             label: '',
+      //           ),
+      //           BottomNavigationBarItem(
+      //             icon: Icon(
+      //                 Icons.shopping_cart,color: Colors.white,
+      //                 size: 25),
+      //             label: '',
+      //             // backgroundColor: AppData.orangeColor
+      //           ),
+      //           BottomNavigationBarItem(
+      //             icon: Icon(
+      //               Icons.person,color: Colors.white,
+      //               size: 25, ),///
+      //             label: '',
+      //             // backgroundColor: AppData.orangeColor
+      //           ),
+      //           BottomNavigationBarItem(
+      //             icon: Icon(
+      //               Icons.message,color: Colors.white,
+      //               size: 25, ),///
+      //             label: '',
+      //             // backgroundColor: AppData.orangeColor
+      //           ),
+      //
+      //
+      //         ],
+      //       ),
+      //
+      //       SizedBox(height: 10,),
+      //       Expanded(
+      //         child: Container(
+      //           color: Colors.white,
+      //           child: Padding(
+      //             padding: const EdgeInsets.symmetric(horizontal: 15.0),
+      //             child: Row(
+      //               children: [
+      //                 Text("DEVELOPED BY :",style: TextStyle(fontWeight: FontWeight.bold),),
+      //                 SizedBox(width: 20,),
+      //                 Image.asset("assets/images/logo diisha.png",height: 30,width: 100,),
+      //                 SizedBox(width: 20,),
+      //                 Image.asset("assets/images/Ehealthlogo.png",height: 30,width: 100,),
+      //               ],
+      //             ),
+      //           ),
+      //         ),
+      //       )
+      //
+      //     ],
+      //   ),
+      // ),
 
 
       body: Column(
@@ -156,7 +156,7 @@ class NCDScreeningPageView extends GetView<NCDScreeningPageController> {
           Divider(thickness: 1.0),
           Container(
             color: Colors.teal,
-            width: 420,
+            width: double.maxFinite,
             child: Row(
               children: [
                 Icon(
@@ -171,7 +171,7 @@ class NCDScreeningPageView extends GetView<NCDScreeningPageController> {
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
-                      fontSize: 18.0),
+                      fontSize: 16.0),
                 ),
               ],
             ),
@@ -202,7 +202,7 @@ class NCDScreeningPageView extends GetView<NCDScreeningPageController> {
                   contentPadding: EdgeInsets.only(left: 15.0, right: 15.0),
                   //suffixIcon: Icon(Icons.search),
                   hintText: 'Search Patient',
-                  hintStyle: TextStyle(fontSize: 18),
+                  hintStyle: TextStyle(fontSize: 16),
                 ),
               ),
             ),
@@ -229,7 +229,7 @@ class NCDScreeningPageView extends GetView<NCDScreeningPageController> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Name: Pooh', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
+                              Text('Name: Pooh', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
