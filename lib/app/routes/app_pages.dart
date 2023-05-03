@@ -36,7 +36,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.VIEW_ABHA_CARD_PAGE,
-      page: () => const ViewAbhaCardPageView(),
+      page: () =>  ViewAbhaCardPageView(),
       binding: ViewAbhaCardPageBinding(),
     ),
     GetPage(
