@@ -91,8 +91,31 @@ class RegisterwithAadharPageView
                       ),
                     ),
 
+
                   ],
                 ),
+              ),
+            ),
+            SizedBox(height: 20,),
+            InkWell(
+              // onTap: () {
+              //   Get.toNamed(
+              //     Routes
+              //         .DIISHA_DASHBOARD,
+              //   );
+              // },
+              child: Container(
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(30)),
+                height: 40,
+                width: 200,
+                child: Card( shape: RoundedRectangleBorder(borderRadius:BorderRadius.circular(30) ) ,
+                    elevation: 10,
+                    color: Colors.white,
+                    child: Center(
+                      child: Text("Proceed",style: TextStyle(fontSize: 14,
+                          fontWeight: FontWeight.bold,color: Colors.teal
+                      ),),
+                    )),
               ),
             ),
 
@@ -125,7 +148,7 @@ class RegisterwithAadharPageView
                   //enabled: widget.isConfirmPage ? false : true,
                   controller: controller.congController,
                   placeholder: hint,
-                  padding: EdgeInsets.symmetric(horizontal: 26, vertical: 14),
+                  padding: EdgeInsets.symmetric(horizontal: 100, vertical: 14),
                   style: TextStyle(
                       color: Colors.grey, fontSize:14),
                   // focusNode: currentfn,
