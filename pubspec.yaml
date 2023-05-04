@@ -11,6 +11,8 @@ dependencies:
   dio:
   encrypt:
   intl:
+  carousel_slider:
+
   flutter: 
     sdk: flutter
 

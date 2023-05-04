@@ -316,7 +316,7 @@ class ViewAbhaCardPageView extends GetView<ViewAbhaCardPageController> {
                                      padding: const EdgeInsets.only(left: 15.0),
                                      child: Container(
                                        height: 90,
-                                       width: 90,
+                                       width: Get.width*0.2,
                                        decoration: BoxDecoration(border: Border.all(color: Colors.black)),
                                        child: Icon(
                                          Icons.qr_code_2,color: Colors.black

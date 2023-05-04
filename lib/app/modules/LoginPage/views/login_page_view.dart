@@ -78,7 +78,7 @@ class LoginPageView extends GetView<LoginPageController> {
              onTap: () {
                Get.toNamed(
                  Routes
-                     .VIEW_ABHA_CARD_PAGE,
+                     .DIISHA_DASHBOARD,
                );
              },
                 child: Container(
@@ -96,18 +96,27 @@ class LoginPageView extends GetView<LoginPageController> {
                 ),
               ),
               SizedBox(height: 10,),
-              Container(
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(30)),
-                height: 40,
-                width: 200,
-                child: Card( shape: RoundedRectangleBorder(borderRadius:BorderRadius.circular(30) ) ,
-                    elevation: 10,
-                    color: Colors.teal,
-                    child: Center(
-                      child: Text("Log in with OTP",style: TextStyle(fontSize: 14,
-                          fontWeight: FontWeight.bold,color: Colors.white
-                      ),),
-                    )),
+              InkWell(
+                onTap: () {
+                  Get.toNamed(
+                    Routes
+                        .ABHA_CONGRATULATION_PAGE,
+                  );
+                },
+
+                child: Container(
+                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(30)),
+                  height: 40,
+                  width: 200,
+                  child: Card( shape: RoundedRectangleBorder(borderRadius:BorderRadius.circular(30) ) ,
+                      elevation: 10,
+                      color: Colors.teal,
+                      child: Center(
+                        child: Text("Log in with OTP",style: TextStyle(fontSize: 14,
+                            fontWeight: FontWeight.bold,color: Colors.white
+                        ),),
+                      )),
+                ),
               ),
               SizedBox(height: MediaQuery.of(context).size.height*0.05,),
 

@@ -1,5 +1,9 @@
 import 'package:get/get.dart';
 
+import '../modules/AbhaCongratulationPage/bindings/abha_congratulation_page_binding.dart';
+import '../modules/AbhaCongratulationPage/views/abha_congratulation_page_view.dart';
+import '../modules/DiishaDashboard/bindings/diisha_dashboard_binding.dart';
+import '../modules/DiishaDashboard/views/diisha_dashboard_view.dart';
 import '../modules/LoginPage/bindings/login_page_binding.dart';
 import '../modules/LoginPage/views/login_page_view.dart';
 import '../modules/NCDScreeningPage/bindings/n_c_d_screening_page_binding.dart';
@@ -36,13 +40,23 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.VIEW_ABHA_CARD_PAGE,
-      page: () =>  ViewAbhaCardPageView(),
+      page: () => ViewAbhaCardPageView(),
       binding: ViewAbhaCardPageBinding(),
     ),
     GetPage(
       name: _Paths.N_C_D_SCREENING_PAGE,
       page: () => const NCDScreeningPageView(),
       binding: NCDScreeningPageBinding(),
+    ),
+    GetPage(
+      name: _Paths.DIISHA_DASHBOARD,
+      page: () => DiishaDashboardView(),
+      binding: DiishaDashboardBinding(),
+    ),
+    GetPage(
+      name: _Paths.ABHA_CONGRATULATION_PAGE,
+      page: () => const AbhaCongratulationPageView(),
+      binding: AbhaCongratulationPageBinding(),
     ),
   ];
 }

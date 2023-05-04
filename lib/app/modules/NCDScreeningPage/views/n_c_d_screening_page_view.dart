@@ -178,6 +178,7 @@ class NCDScreeningPageView extends GetView<NCDScreeningPageController> {
               ),
             ),
           ),
+
           SizedBox(
             height: 7,
           ),
