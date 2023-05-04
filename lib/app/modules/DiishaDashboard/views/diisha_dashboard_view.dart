@@ -3,15 +3,16 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
+import '../../../routes/app_pages.dart';
 import '../controllers/diisha_dashboard_controller.dart';
 
 class DiishaDashboardView extends GetView<DiishaDashboardController> {
    DiishaDashboardView({Key? key}) : super(key: key);
   @override
   List<String> imageSliders = [
-    "assets/images/diishanewww.jpg",
-    "assets/images/diishanewww.jpg",
-    "assets/images/diishanewww.jpg",
+    "assets/images/slider1.jpg",
+    "assets/images/slider2.jpg",
+    "assets/images/slider3.jpg",
   ];
   TextEditingController nameController = TextEditingController();
   Widget build(BuildContext context) {
@@ -154,7 +155,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
             children: [
               SizedBox(height: 12,),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 9.0),
+                padding: const EdgeInsets.symmetric(horizontal: 13.0),
                 child: Container(
 
                   height: 40,
@@ -162,7 +163,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(6.0),
                       color: Colors.grey,
-                      shape: BoxShape.rectangle
+                      shape: BoxShape.rectangle,
                   ),
                   child: TextField(
                     controller: nameController,
@@ -173,6 +174,9 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                       suffixIcon: Icon(Icons.search,color: Colors.teal,),
                       hintText: 'Search',
                       hintStyle: TextStyle(fontSize: 16),
+                      enabledBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.teal),
+                      ),
                     ),
                   ),
                 ),
@@ -262,42 +266,50 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                 ))
                     .toList(),
               ),
-              SizedBox(height: 10,),
+              SizedBox(height: 3,),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 9.0),
+                padding: const EdgeInsets.symmetric(horizontal: 11.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      height:MediaQuery.of(context).size.height*0.13,
-                        width:MediaQuery.of(context).size.width*0.45,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.green),
+                    InkWell(
+                      onTap: () {
+                        Get.toNamed(
+                          Routes
+                              .REGISTERWITH_AADHAR_PAGE,
+                        );
+                      },
+                      child: Container(
+                        height:MediaQuery.of(context).size.height*0.12,
+                          width:MediaQuery.of(context).size.width*0.45,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.green),
 
-                        //color: Colors.teal,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(right: 12.0,top: 5),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Image.asset("assets/images/register.png",height: 70,width: 80,),
+                          //color: Colors.teal,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(right: 12.0,top: 5),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Image.asset("assets/images/register.png",height: 50,width: 70,),
 
-                                ],
+                                  ],
+                                ),
                               ),
-                            ),
-                            //SizedBox(height: 10,),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 8.0,left: 5),
-                              child: Text("REGISTER NEW CITIZEN",
-                                style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
-                            ),
-                          ],
-                        )),
+                              //SizedBox(height: 10,),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 8.0,left: 5),
+                                child: Text("REGISTER NEW CITIZEN",
+                                  style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
+                              ),
+                            ],
+                          )),
+                    ),
                     Container(
-                      height:MediaQuery.of(context).size.height*0.13,
+                      height:MediaQuery.of(context).size.height*0.12,
                         width:MediaQuery.of(context).size.width*0.45,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.teal),
 
@@ -311,7 +323,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Image.asset("assets/images/ncd-screening.png",height: 70,width: 80,),
+                                  Image.asset("assets/images/ncd-screening.png",height: 50,width: 70,),
 
                                 ],
                               ),
@@ -329,12 +341,12 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
               ),
               SizedBox(height: 10,),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 9.0),
+                padding: const EdgeInsets.symmetric(horizontal: 11.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                        height:MediaQuery.of(context).size.height*0.13,
+                        height:MediaQuery.of(context).size.height*0.12,
                         width:MediaQuery.of(context).size.width*0.45,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.green),
 
@@ -348,7 +360,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Image.asset("assets/images/red-flag-alert.png",height: 70,width: 80,),
+                                  Image.asset("assets/images/red-flag-alert.png",height: 50,width: 70,),
 
                                 ],
                               ),
@@ -356,13 +368,13 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                             //SizedBox(height: 10,),
                             Padding(
                               padding: const EdgeInsets.only(top: 8.0,left: 5),
-                              child: Text("REGISTER NEW CITIZEN",
+                              child: Text("RED FLAG ALERT LIST",
                                 style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
                             ),
                           ],
                         )),
                     Container(
-                        height:MediaQuery.of(context).size.height*0.13,
+                        height:MediaQuery.of(context).size.height*0.12,
                         width:MediaQuery.of(context).size.width*0.45,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.teal),
 
@@ -376,7 +388,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Image.asset("assets/images/ncd-screening.png",height: 70,width: 80,),
+                                  Image.asset("assets/images/health-checkup.png",height: 50,width: 70,),
 
                                 ],
                               ),
@@ -384,7 +396,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                             //SizedBox(height: 10,),
                             Padding(
                               padding: const EdgeInsets.only(top: 8.0,left: 5),
-                              child: Text("NCD SCREENING TEST",
+                              child: Text("HEALTH CHECK-UP LIST",
                                 style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
                             ),
                           ],
@@ -394,12 +406,12 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
               ),
               SizedBox(height: 10,),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 9.0),
+                padding: const EdgeInsets.symmetric(horizontal: 11.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                        height:MediaQuery.of(context).size.height*0.13,
+                        height:MediaQuery.of(context).size.height*0.12,
                         width:MediaQuery.of(context).size.width*0.45,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.green),
 
@@ -413,7 +425,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Image.asset("assets/images/register.png",height: 70,width: 80,),
+                                  Image.asset("assets/images/checkupl-report.png",height: 50,width: 70,),
 
                                 ],
                               ),
@@ -421,13 +433,13 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                             //SizedBox(height: 10,),
                             Padding(
                               padding: const EdgeInsets.only(top: 8.0,left: 5),
-                              child: Text("REGISTER NEW CITIZEN",
+                              child: Text("CHECK-UP REPORTS",
                                 style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
                             ),
                           ],
                         )),
                     Container(
-                        height:MediaQuery.of(context).size.height*0.13,
+                        height:MediaQuery.of(context).size.height*0.12,
                         width:MediaQuery.of(context).size.width*0.45,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.teal),
 
@@ -441,7 +453,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Image.asset("assets/images/ncd-screening.png",height: 70,width: 80,),
+                                  Image.asset("assets/images/doctor-consultation.png",height: 50,width: 70,),
 
                                 ],
                               ),
@@ -449,7 +461,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                             //SizedBox(height: 10,),
                             Padding(
                               padding: const EdgeInsets.only(top: 8.0,left: 5),
-                              child: Text("NCD SCREENING TEST",
+                              child: Text("DOCTOR CONSULTATION",
                                 style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
                             ),
                           ],
@@ -459,12 +471,12 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
               ),
               SizedBox(height: 10,),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 9.0),
+                padding: const EdgeInsets.symmetric(horizontal: 11.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                        height:MediaQuery.of(context).size.height*0.13,
+                        height:MediaQuery.of(context).size.height*0.12,
                         width:MediaQuery.of(context).size.width*0.45,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.green),
 
@@ -478,7 +490,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Image.asset("assets/images/register.png",height: 70,width: 80,),
+                                  Image.asset("assets/images/medicine-delivery.png",height: 50,width: 70,),
 
                                 ],
                               ),
@@ -486,13 +498,13 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                             //SizedBox(height: 10,),
                             Padding(
                               padding: const EdgeInsets.only(top: 8.0,left: 5),
-                              child: Text("REGISTER NEW CITIZEN",
+                              child: Text("MEDICINE DELIVERY",
                                 style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
                             ),
                           ],
                         )),
                     Container(
-                        height:MediaQuery.of(context).size.height*0.13,
+                        height:MediaQuery.of(context).size.height*0.12,
                         width:MediaQuery.of(context).size.width*0.45,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.teal),
 
@@ -506,7 +518,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Image.asset("assets/images/ncd-screening.png",height: 70,width: 80,),
+                                  Image.asset("assets/images/guide-book.png",height: 50,width: 70,),
 
                                 ],
                               ),
@@ -514,7 +526,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                             //SizedBox(height: 10,),
                             Padding(
                               padding: const EdgeInsets.only(top: 8.0,left: 5),
-                              child: Text("NCD SCREENING TEST",
+                              child: Text("HELP/GUIDE BOOK",
                                 style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
                             ),
                           ],

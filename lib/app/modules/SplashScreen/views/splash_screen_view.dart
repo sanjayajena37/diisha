@@ -31,7 +31,7 @@ class SplashScreenView extends GetView<SplashScreenController> {
             ),
             SizedBox(height: 5,),
             Image.asset(
-              "assets/images/dishaemployee.jpg",
+              "assets/images/banner1.jpg",
               height: 300,
               width: double.maxFinite,
               fit: BoxFit.contain,

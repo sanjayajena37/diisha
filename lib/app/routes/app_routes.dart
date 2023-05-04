@@ -10,6 +10,7 @@ abstract class Routes {
   static const N_C_D_SCREENING_PAGE = _Paths.N_C_D_SCREENING_PAGE;
   static const DIISHA_DASHBOARD = _Paths.DIISHA_DASHBOARD;
   static const ABHA_CONGRATULATION_PAGE = _Paths.ABHA_CONGRATULATION_PAGE;
+  static const REGISTERWITH_AADHAR_PAGE = _Paths.REGISTERWITH_AADHAR_PAGE;
 }
 
 abstract class _Paths {
@@ -21,4 +22,5 @@ abstract class _Paths {
   static const N_C_D_SCREENING_PAGE = '/n-c-d-screening-page';
   static const DIISHA_DASHBOARD = '/diisha-dashboard';
   static const ABHA_CONGRATULATION_PAGE = '/abha-congratulation-page';
+  static const REGISTERWITH_AADHAR_PAGE = '/registerwith-aadhar-page';
 }

@@ -8,6 +8,8 @@ import '../modules/LoginPage/bindings/login_page_binding.dart';
 import '../modules/LoginPage/views/login_page_view.dart';
 import '../modules/NCDScreeningPage/bindings/n_c_d_screening_page_binding.dart';
 import '../modules/NCDScreeningPage/views/n_c_d_screening_page_view.dart';
+import '../modules/RegisterwithAadharPage/bindings/registerwith_aadhar_page_binding.dart';
+import '../modules/RegisterwithAadharPage/views/registerwith_aadhar_page_view.dart';
 import '../modules/SplashScreen/bindings/splash_screen_binding.dart';
 import '../modules/SplashScreen/views/splash_screen_view.dart';
 import '../modules/ViewAbhaCardPage/bindings/view_abha_card_page_binding.dart';
@@ -57,6 +59,11 @@ class AppPages {
       name: _Paths.ABHA_CONGRATULATION_PAGE,
       page: () => const AbhaCongratulationPageView(),
       binding: AbhaCongratulationPageBinding(),
+    ),
+    GetPage(
+      name: _Paths.REGISTERWITH_AADHAR_PAGE,
+      page: () => const RegisterwithAadharPageView(),
+      binding: RegisterwithAadharPageBinding(),
     ),
   ];
 }
