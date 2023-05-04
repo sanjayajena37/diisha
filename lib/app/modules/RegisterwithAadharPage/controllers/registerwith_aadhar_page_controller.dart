@@ -1,7 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 class RegisterwithAadharPageController extends GetxController {
   //TODO: Implement RegisterwithAadharPageController
+  TextEditingController congController = new TextEditingController();
 
   final count = 0.obs;
   @override

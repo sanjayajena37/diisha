@@ -174,10 +174,9 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                       suffixIcon: Icon(Icons.search,color: Colors.teal,),
                       hintText: 'Search',
                       hintStyle: TextStyle(fontSize: 16),
-                      enabledBorder: UnderlineInputBorder(
-                        borderSide: BorderSide(color: Colors.teal),
-                      ),
+                      border: InputBorder.none,
                     ),
+
                   ),
                 ),
               ),

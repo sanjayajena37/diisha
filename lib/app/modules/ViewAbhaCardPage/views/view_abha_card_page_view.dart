@@ -172,7 +172,8 @@ class ViewAbhaCardPageView extends GetView<ViewAbhaCardPageController> {
                       children: [
                         Icon(Icons.arrow_back_rounded,),
                         SizedBox(width: 20,),
-                        Text("ABHA REGISTRATION",style: TextStyle(color: Colors.teal,fontWeight: FontWeight.bold,fontSize: 16),),
+                        Text("ABHA REGISTRATION",style: TextStyle(color: Colors.teal,
+                            fontWeight: FontWeight.bold,fontSize: 16),),
                       ],
                     ),
                   ),
