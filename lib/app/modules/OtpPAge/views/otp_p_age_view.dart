@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../widgets/MySeparator.dart';
+import '../../../routes/app_pages.dart';
 import '../controllers/otp_p_age_controller.dart';
 
 class OtpPAgeView extends GetView<OtpPAgeController> {
@@ -134,10 +135,10 @@ class OtpPAgeView extends GetView<OtpPAgeController> {
             ),
             InkWell(
               onTap: () {
-                // Get.toNamed(
-                //   Routes
-                //       .ABHA_CONGRATULATION_PAGE,
-                // );
+                Get.toNamed(
+                  Routes
+                      .ABHA_CONGRATULATION_PAGE,
+                );
               },
               child: Container(
                 decoration:
@@ -205,7 +206,10 @@ class OtpPAgeView extends GetView<OtpPAgeController> {
             SizedBox(
               height: 15,
             ),
-
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: Image.asset('assets/images/abhacard233.jpg'),
+            ),
             // Container(
             //     height: 350,
             //     width: 250,

@@ -33,12 +33,12 @@ class LoginPageView extends GetView<LoginPageController> {
                 ),
               ),
               Center(child: InkWell(
-                  onTap: () {
-                    Get.toNamed(
-                      Routes
-                          .OTP_P_AGE,
-                    );
-                  },
+                  // onTap: () {
+                  //   Get.toNamed(
+                  //     Routes
+                  //         .OTP_P_AGE,
+                  //   );
+                  // },
                   child: Text("SIGN IN",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22,color: Colors.teal),))),
               SizedBox(height: 30,),
 
@@ -104,12 +104,12 @@ class LoginPageView extends GetView<LoginPageController> {
               ),
               SizedBox(height: 10,),
               InkWell(
-                onTap: () {
-                  Get.toNamed(
-                    Routes
-                        .ABHA_CONGRATULATION_PAGE,
-                  );
-                },
+                // onTap: () {
+                //   Get.toNamed(
+                //     Routes
+                //         .ABHA_CONGRATULATION_PAGE,
+                //   );
+                // },
 
                 child: Container(
                   decoration: BoxDecoration(borderRadius: BorderRadius.circular(30)),

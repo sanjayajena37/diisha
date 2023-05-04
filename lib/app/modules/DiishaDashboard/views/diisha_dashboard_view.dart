@@ -139,7 +139,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                         SizedBox(width: 20,),
                         Image.asset("assets/images/logo diisha.png",height: 30,width: 100,),
                         SizedBox(width: 20,),
-                        Image.asset("assets/images/Ehealthlogo.png",height: 30,width: 100,),
+                        Image.asset("assets/images/Ehealthlogo.png",height: 30,width: 80,),
                       ],
                     ),
                   ),
@@ -267,7 +267,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
               ),
               SizedBox(height: 3,),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 11.0),
+                padding: const EdgeInsets.symmetric(horizontal: 11.0,vertical: 0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -279,7 +279,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                         );
                       },
                       child: Container(
-                        height:MediaQuery.of(context).size.height*0.12,
+                        height:MediaQuery.of(context).size.height*0.15,
                           width:MediaQuery.of(context).size.width*0.45,
                           decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.green),
 
@@ -307,34 +307,43 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                             ],
                           )),
                     ),
-                    Container(
-                      height:MediaQuery.of(context).size.height*0.12,
-                        width:MediaQuery.of(context).size.width*0.45,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.teal),
+                    InkWell(
+                      onTap: () {
+                        Get.toNamed(
+                          Routes
+                              .N_C_D_SCREENING_PAGE,
+                        );
+                      },
 
-                        //color: Colors.teal,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(right: 12.0,top: 5),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Image.asset("assets/images/ncd-screening.png",height: 50,width: 70,),
+                      child: Container(
+                        height:MediaQuery.of(context).size.height*0.15,
+                          width:MediaQuery.of(context).size.width*0.45,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.teal),
 
-                                ],
+                          //color: Colors.teal,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(right: 12.0,top: 5),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Image.asset("assets/images/ncd-screening.png",height: 50,width: 70,),
+
+                                  ],
+                                ),
                               ),
-                            ),
-                            //SizedBox(height: 10,),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 8.0,left: 5),
-                              child: Text("NCD SCREENING TEST",
-                                style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
-                            ),
-                          ],
-                        )),
+                              //SizedBox(height: 10,),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 8.0,left: 5),
+                                child: Text("NCD SCREENING TEST",
+                                  style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
+                              ),
+                            ],
+                          )),
+                    ),
                   ],
                 ),
               ),
@@ -345,7 +354,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                        height:MediaQuery.of(context).size.height*0.12,
+                        height:MediaQuery.of(context).size.height*0.15,
                         width:MediaQuery.of(context).size.width*0.45,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.green),
 
@@ -373,7 +382,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                           ],
                         )),
                     Container(
-                        height:MediaQuery.of(context).size.height*0.12,
+                        height:MediaQuery.of(context).size.height*0.15,
                         width:MediaQuery.of(context).size.width*0.45,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.teal),
 
@@ -410,7 +419,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                        height:MediaQuery.of(context).size.height*0.12,
+                        height:MediaQuery.of(context).size.height*0.15,
                         width:MediaQuery.of(context).size.width*0.45,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.green),
 
@@ -438,7 +447,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                           ],
                         )),
                     Container(
-                        height:MediaQuery.of(context).size.height*0.12,
+                        height:MediaQuery.of(context).size.height*0.15,
                         width:MediaQuery.of(context).size.width*0.45,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.teal),
 
@@ -475,7 +484,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                        height:MediaQuery.of(context).size.height*0.12,
+                        height:MediaQuery.of(context).size.height*0.15,
                         width:MediaQuery.of(context).size.width*0.45,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.green),
 
@@ -503,7 +512,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                           ],
                         )),
                     Container(
-                        height:MediaQuery.of(context).size.height*0.12,
+                        height:MediaQuery.of(context).size.height*0.15,
                         width:MediaQuery.of(context).size.width*0.45,
                         decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.teal),
 

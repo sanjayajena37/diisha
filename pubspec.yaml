@@ -12,6 +12,7 @@ dependencies:
   encrypt:
   intl:
   carousel_slider:
+  pin_code_fields:
 
   flutter: 
     sdk: flutter
