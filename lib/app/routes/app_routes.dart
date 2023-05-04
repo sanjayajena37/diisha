@@ -11,6 +11,7 @@ abstract class Routes {
   static const DIISHA_DASHBOARD = _Paths.DIISHA_DASHBOARD;
   static const ABHA_CONGRATULATION_PAGE = _Paths.ABHA_CONGRATULATION_PAGE;
   static const REGISTERWITH_AADHAR_PAGE = _Paths.REGISTERWITH_AADHAR_PAGE;
+  static const OTP_P_AGE = _Paths.OTP_P_AGE;
 }
 
 abstract class _Paths {
@@ -23,4 +24,5 @@ abstract class _Paths {
   static const DIISHA_DASHBOARD = '/diisha-dashboard';
   static const ABHA_CONGRATULATION_PAGE = '/abha-congratulation-page';
   static const REGISTERWITH_AADHAR_PAGE = '/registerwith-aadhar-page';
+  static const OTP_P_AGE = '/otp-p-age';
 }

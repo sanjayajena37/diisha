@@ -8,6 +8,8 @@ import '../modules/LoginPage/bindings/login_page_binding.dart';
 import '../modules/LoginPage/views/login_page_view.dart';
 import '../modules/NCDScreeningPage/bindings/n_c_d_screening_page_binding.dart';
 import '../modules/NCDScreeningPage/views/n_c_d_screening_page_view.dart';
+import '../modules/OtpPAge/bindings/otp_p_age_binding.dart';
+import '../modules/OtpPAge/views/otp_p_age_view.dart';
 import '../modules/RegisterwithAadharPage/bindings/registerwith_aadhar_page_binding.dart';
 import '../modules/RegisterwithAadharPage/views/registerwith_aadhar_page_view.dart';
 import '../modules/SplashScreen/bindings/splash_screen_binding.dart';
@@ -64,6 +66,11 @@ class AppPages {
       name: _Paths.REGISTERWITH_AADHAR_PAGE,
       page: () => const RegisterwithAadharPageView(),
       binding: RegisterwithAadharPageBinding(),
+    ),
+    GetPage(
+      name: _Paths.OTP_P_AGE,
+      page: () => const OtpPAgeView(),
+      binding: OtpPAgeBinding(),
     ),
   ];
 }

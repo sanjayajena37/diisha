@@ -32,7 +32,14 @@ class LoginPageView extends GetView<LoginPageController> {
 
                 ),
               ),
-              Center(child: Text("SIGN IN",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22,color: Colors.teal),)),
+              Center(child: InkWell(
+                  onTap: () {
+                    Get.toNamed(
+                      Routes
+                          .OTP_P_AGE,
+                    );
+                  },
+                  child: Text("SIGN IN",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22,color: Colors.teal),))),
               SizedBox(height: 30,),
 
               Row(
