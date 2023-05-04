@@ -70,9 +70,17 @@ class RegisterwithAadharPageView
                         ),
                       ],
                     ),
-                    Text("Step 1",style: TextStyle(fontWeight:FontWeight.bold),),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 8.0),
+                          child: Text("Step 1",style: TextStyle(fontWeight:FontWeight.bold),),
+                        ),
+                      ],
+                    ),
                     SizedBox(
-                      height: 30,
+                      height: 10,
                     ),
                     Text(
                       'Enter Aadhar Card Number here',
