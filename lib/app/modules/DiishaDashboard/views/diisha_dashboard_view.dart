@@ -354,62 +354,78 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                        height:MediaQuery.of(context).size.height*0.15,
-                        width:MediaQuery.of(context).size.width*0.45,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.teal),
+                    InkWell(
+                      onTap: () {
+                        Get.toNamed(
+                          Routes
+                              .N_C_D_SCREENING_PAGE,
+                        );
+                      },
+                      child: Container(
+                          height:MediaQuery.of(context).size.height*0.15,
+                          width:MediaQuery.of(context).size.width*0.45,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.teal),
 
-                        //color: Colors.teal,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(right: 15.0,top: 20),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Image.asset("assets/images/red-flag-alert.png",height: 50,width: 70,),
+                          //color: Colors.teal,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(right: 15.0,top: 20),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Image.asset("assets/images/red-flag-alert.png",height: 50,width: 70,),
 
-                                ],
+                                  ],
+                                ),
                               ),
-                            ),
-                            //SizedBox(height: 10,),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 8.0,left: 5),
-                              child: Text("RED FLAG ALERT LIST",
-                                style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
-                            ),
-                          ],
-                        )),
-                    Container(
-                        height:MediaQuery.of(context).size.height*0.15,
-                        width:MediaQuery.of(context).size.width*0.45,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.green),
-
-                        //color: Colors.teal,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(right: 15.0,top: 20),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Image.asset("assets/images/health-checkup.png",height: 50,width: 70,),
-
-                                ],
+                              //SizedBox(height: 10,),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 8.0,left: 5),
+                                child: Text("RED FLAG ALERT LIST",
+                                  style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
                               ),
-                            ),
-                            //SizedBox(height: 10,),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 8.0,left: 5),
-                              child: Text("HEALTH CHECK-UP LIST",
-                                style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
-                            ),
-                          ],
-                        )),
+                            ],
+                          )),
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Get.toNamed(
+                          Routes
+                              .N_C_D_SCREENING_PAGE,
+                        );
+                      },
+                      child: Container(
+                          height:MediaQuery.of(context).size.height*0.15,
+                          width:MediaQuery.of(context).size.width*0.45,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.green),
+
+                          //color: Colors.teal,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(right: 15.0,top: 20),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Image.asset("assets/images/health-checkup.png",height: 50,width: 70,),
+
+                                  ],
+                                ),
+                              ),
+                              //SizedBox(height: 10,),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 8.0,left: 5),
+                                child: Text("HEALTH CHECK-UP LIST",
+                                  style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
+                              ),
+                            ],
+                          )),
+                    ),
                   ],
                 ),
               ),
@@ -419,62 +435,78 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                        height:MediaQuery.of(context).size.height*0.15,
-                        width:MediaQuery.of(context).size.width*0.45,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.green),
+                    InkWell(
+                      onTap: () {
+                        Get.toNamed(
+                          Routes
+                              .N_C_D_SCREENING_PAGE,
+                        );
+                      },
+                      child: Container(
+                          height:MediaQuery.of(context).size.height*0.15,
+                          width:MediaQuery.of(context).size.width*0.45,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.green),
 
-                        //color: Colors.teal,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(right: 15.0,top: 20),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Image.asset("assets/images/checkupl-report.png",height: 50,width: 70,),
+                          //color: Colors.teal,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(right: 15.0,top: 20),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Image.asset("assets/images/checkupl-report.png",height: 50,width: 70,),
 
-                                ],
+                                  ],
+                                ),
                               ),
-                            ),
-                            //SizedBox(height: 10,),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 8.0,left: 5),
-                              child: Text("CHECK-UP REPORTS",
-                                style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
-                            ),
-                          ],
-                        )),
-                    Container(
-                        height:MediaQuery.of(context).size.height*0.15,
-                        width:MediaQuery.of(context).size.width*0.45,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.teal),
-
-                        //color: Colors.teal,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(right: 15.0,top: 20),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Image.asset("assets/images/doctor-consultation.png",height: 50,width: 70,),
-
-                                ],
+                              //SizedBox(height: 10,),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 8.0,left: 5),
+                                child: Text("CHECK-UP REPORTS",
+                                  style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
                               ),
-                            ),
-                            //SizedBox(height: 10,),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 8.0,left: 5),
-                              child: Text("DOCTOR CONSULTATION",
-                                style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
-                            ),
-                          ],
-                        )),
+                            ],
+                          )),
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Get.toNamed(
+                          Routes
+                              .N_C_D_SCREENING_PAGE,
+                        );
+                      },
+                      child: Container(
+                          height:MediaQuery.of(context).size.height*0.15,
+                          width:MediaQuery.of(context).size.width*0.45,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.teal),
+
+                          //color: Colors.teal,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(right: 15.0,top: 20),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Image.asset("assets/images/doctor-consultation.png",height: 50,width: 70,),
+
+                                  ],
+                                ),
+                              ),
+                              //SizedBox(height: 10,),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 8.0,left: 5),
+                                child: Text("DOCTOR CONSULTATION",
+                                  style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
+                              ),
+                            ],
+                          )),
+                    ),
                   ],
                 ),
               ),
@@ -484,62 +516,78 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                        height:MediaQuery.of(context).size.height*0.15,
-                        width:MediaQuery.of(context).size.width*0.45,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.teal),
+                    InkWell(
+                      onTap: () {
+                        Get.toNamed(
+                          Routes
+                              .N_C_D_SCREENING_PAGE,
+                        );
+                      },
+                      child: Container(
+                          height:MediaQuery.of(context).size.height*0.15,
+                          width:MediaQuery.of(context).size.width*0.45,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.teal),
 
-                        //color: Colors.teal,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(right: 15.0,top: 20),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Image.asset("assets/images/medicine-delivery.png",height: 50,width: 70,),
+                          //color: Colors.teal,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(right: 15.0,top: 20),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Image.asset("assets/images/medicine-delivery.png",height: 50,width: 70,),
 
-                                ],
+                                  ],
+                                ),
                               ),
-                            ),
-                            //SizedBox(height: 10,),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 8.0,left: 5),
-                              child: Text("MEDICINE DELIVERY",
-                                style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
-                            ),
-                          ],
-                        )),
-                    Container(
-                        height:MediaQuery.of(context).size.height*0.15,
-                        width:MediaQuery.of(context).size.width*0.45,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.green),
-
-                        //color: Colors.teal,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(right: 15.0,top: 20),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Image.asset("assets/images/guide-book.png",height: 50,width: 70,),
-
-                                ],
+                              //SizedBox(height: 10,),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 8.0,left: 5),
+                                child: Text("MEDICINE DELIVERY",
+                                  style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
                               ),
-                            ),
-                            //SizedBox(height: 10,),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 8.0,left: 5),
-                              child: Text("HELP/GUIDE BOOK",
-                                style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
-                            ),
-                          ],
-                        )),
+                            ],
+                          )),
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Get.toNamed(
+                          Routes
+                              .N_C_D_SCREENING_PAGE,
+                        );
+                      },
+                      child: Container(
+                          height:MediaQuery.of(context).size.height*0.15,
+                          width:MediaQuery.of(context).size.width*0.45,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.green),
+
+                          //color: Colors.teal,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(right: 15.0,top: 20),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Image.asset("assets/images/guide-book.png",height: 50,width: 70,),
+
+                                  ],
+                                ),
+                              ),
+                              //SizedBox(height: 10,),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 8.0,left: 5),
+                                child: Text("HELP/GUIDE BOOK",
+                                  style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
+                              ),
+                            ],
+                          )),
+                    ),
                   ],
                 ),
               ),

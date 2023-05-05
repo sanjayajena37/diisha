@@ -9,8 +9,10 @@ import '../controllers/registerwith_aadhar_page_controller.dart';
 
 class RegisterwithAadharPageView
     extends GetView<RegisterwithAadharPageController> {
-  const RegisterwithAadharPageView({Key? key}) : super(key: key);
+   RegisterwithAadharPageView({Key? key}) : super(key: key);
+
   @override
+  bool _rememberMe = true;
   Widget build(BuildContext context) {
     return Scaffold(
        backgroundColor: Colors.teal,
@@ -97,7 +99,7 @@ class RegisterwithAadharPageView
                         padding: const EdgeInsets.only(top: 8.0),
                         child: formFieldPass(
                             1,
-                            ("***************"),
+                            ("* * * * * * * "),
 
                         ),
                       ),
@@ -133,8 +135,14 @@ class RegisterwithAadharPageView
               SizedBox(height: 20,),
               Row(
 
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
+                  Checkbox(
+                    value: _rememberMe,
+                    onChanged: (value) {
+
+                    },
+                  ),
                   Text("I Agree to give the necessary permissions to Diisha \n "
                       "eHealthSystem to set up my ABHA Health Locker\n",
 
@@ -178,7 +186,7 @@ class RegisterwithAadharPageView
                   placeholder: hint,
                   padding: EdgeInsets.symmetric(horizontal: 100, vertical: 14),
                   style: TextStyle(
-                      color: Colors.grey, fontSize:14),
+                      color: Colors.grey, fontSize:20),
                   // focusNode: currentfn,
                   cursorColor: Colors.teal,
                   textInputAction: TextInputAction.next,

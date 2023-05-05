@@ -174,6 +174,7 @@ class NCDScreeningPageView extends GetView<NCDScreeningPageController> {
                   //suffixIcon: Icon(Icons.search),
                   hintText: 'Search Patient',
                   hintStyle: TextStyle(fontSize: 16),
+                  border: InputBorder.none,
                 ),
               ),
             ),
@@ -187,7 +188,7 @@ class NCDScreeningPageView extends GetView<NCDScreeningPageController> {
             child: Container(
               color: Colors.white,
               child: ListView.separated(
-                separatorBuilder: (context, index) =>MySeparator()  ,
+                separatorBuilder: (context, index) =>MySeparator(),
                   itemBuilder: (context,index){
                   return Container(
                       color: Colors.white,
@@ -201,17 +202,18 @@ class NCDScreeningPageView extends GetView<NCDScreeningPageController> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Name: Pooh', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
+                              Text('Name:'+ controller.user[index]["name"]!, style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
-                                  Text('Age: 26'),
+                                  Text('Age:'+ controller.user[index]["age"]!),
                                   SizedBox(width: 5,),
-                                  Text('G: Female'),
+                                  Text('G:'+ controller.user[index]["gender"]!),
                                 ],
                               ),
                             ],
                           ),
+
                           trailing: Icon(Icons.navigate_next),
                         ),
                       ),
@@ -221,7 +223,7 @@ class NCDScreeningPageView extends GetView<NCDScreeningPageController> {
 
                 padding: EdgeInsets.all(0.0),
 
-              itemCount: 5,
+              itemCount: controller.user.length,
               ),
             ),
           ),

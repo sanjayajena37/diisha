@@ -12,6 +12,7 @@ abstract class Routes {
   static const ABHA_CONGRATULATION_PAGE = _Paths.ABHA_CONGRATULATION_PAGE;
   static const REGISTERWITH_AADHAR_PAGE = _Paths.REGISTERWITH_AADHAR_PAGE;
   static const OTP_P_AGE = _Paths.OTP_P_AGE;
+  static const QUESTIONNAIRE = _Paths.QUESTIONNAIRE;
 }
 
 abstract class _Paths {
@@ -25,4 +26,5 @@ abstract class _Paths {
   static const ABHA_CONGRATULATION_PAGE = '/abha-congratulation-page';
   static const REGISTERWITH_AADHAR_PAGE = '/registerwith-aadhar-page';
   static const OTP_P_AGE = '/otp-p-age';
+  static const QUESTIONNAIRE = '/questionnaire';
 }

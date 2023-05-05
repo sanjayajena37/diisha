@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../widgets/MySeparator.dart';
+import '../../../../widgets/OtpFormField.dart';
 import '../../../routes/app_pages.dart';
 import '../controllers/otp_p_age_controller.dart';
 
@@ -122,8 +123,31 @@ class OtpPAgeView extends GetView<OtpPAgeController> {
                         ),
                       ],
                     ),
-                  SizedBox(height: 5,),
-                    Text("[ _   _    _   _   _   _   _   _   _ ]",style: TextStyle(fontSize: 20),),
+                  SizedBox(height: 10,),
+                    OtpFormField(
+                      numberOfFields: 6,
+                      onOtpEntered: (List<String> otpValues) {
+                        print('OTP entered: $otpValues');
+                        // do something with the OTP values, such as verifying them
+                      },
+                    ),
+
+
+                    // Padding(
+                    //                     //   padding: const EdgeInsets.only(left: 18.0,right: 18),
+                    //                     //   child: TextField(
+                    //                     //     cursorColor: Colors.teal,
+                    //                     //     obscureText: true,
+                    //                     //     decoration: InputDecoration(
+                    //                     //      // labelText: 'Password',
+                    //                     //       hintText: 'Enter your OTP',
+                    //                     //       // other decoration properties
+                    //                     //     ),
+                    //                     //     //
+                    //                     //   ),
+                    //                     // ),
+
+                    // Text("[ _   _    _   _   _   _   _   _   _ ]",style: TextStyle(fontSize: 20),),
                     Container()
                   ],
                 ),
