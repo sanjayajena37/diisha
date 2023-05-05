@@ -122,6 +122,8 @@ class OtpPAgeView extends GetView<OtpPAgeController> {
                         ),
                       ],
                     ),
+                  SizedBox(height: 5,),
+                    Text("[ _   _    _   _   _   _   _   _   _ ]",style: TextStyle(fontSize: 20),),
                     Container()
                   ],
                 ),
@@ -207,7 +209,7 @@ class OtpPAgeView extends GetView<OtpPAgeController> {
               height: 15,
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              padding: const EdgeInsets.symmetric(horizontal: 15.0),
               child: Image.asset('assets/images/abhacard233.jpg'),
             ),
             // Container(

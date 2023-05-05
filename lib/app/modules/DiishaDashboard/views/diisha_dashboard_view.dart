@@ -134,12 +134,13 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 15.0),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text("DEVELOPED BY :",style: TextStyle(fontWeight: FontWeight.bold),),
-                        SizedBox(width: 20,),
+
                         Image.asset("assets/images/logo diisha.png",height: 30,width: 100,),
-                        SizedBox(width: 20,),
-                        Image.asset("assets/images/Ehealthlogo.png",height: 30,width: 80,),
+
+                        Image.asset("assets/images/Ehealthlogo.png",height: 30,width: 120,),
                       ],
                     ),
                   ),
@@ -288,7 +289,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.only(right: 12.0,top: 5),
+                                padding: const EdgeInsets.only(right: 15.0,top: 20),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -300,7 +301,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                               ),
                               //SizedBox(height: 10,),
                               Padding(
-                                padding: const EdgeInsets.only(top: 8.0,left: 5),
+                                padding: const EdgeInsets.only(top: 10.0,left: 6),
                                 child: Text("REGISTER NEW CITIZEN",
                                   style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Colors.white),),
                               ),
@@ -325,7 +326,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.only(right: 12.0,top: 5),
+                                padding: const EdgeInsets.only(right: 15.0,top: 20),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -356,14 +357,14 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                     Container(
                         height:MediaQuery.of(context).size.height*0.15,
                         width:MediaQuery.of(context).size.width*0.45,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.green),
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.teal),
 
                         //color: Colors.teal,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(right: 12.0,top: 5),
+                              padding: const EdgeInsets.only(right: 15.0,top: 20),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -384,14 +385,14 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                     Container(
                         height:MediaQuery.of(context).size.height*0.15,
                         width:MediaQuery.of(context).size.width*0.45,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.teal),
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.green),
 
                         //color: Colors.teal,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(right: 12.0,top: 5),
+                              padding: const EdgeInsets.only(right: 15.0,top: 20),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -428,7 +429,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(right: 12.0,top: 5),
+                              padding: const EdgeInsets.only(right: 15.0,top: 20),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -456,7 +457,7 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(right: 12.0,top: 5),
+                              padding: const EdgeInsets.only(right: 15.0,top: 20),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -486,14 +487,14 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                     Container(
                         height:MediaQuery.of(context).size.height*0.15,
                         width:MediaQuery.of(context).size.width*0.45,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.green),
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.teal),
 
                         //color: Colors.teal,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(right: 12.0,top: 5),
+                              padding: const EdgeInsets.only(right: 15.0,top: 20),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -514,14 +515,14 @@ class DiishaDashboardView extends GetView<DiishaDashboardController> {
                     Container(
                         height:MediaQuery.of(context).size.height*0.15,
                         width:MediaQuery.of(context).size.width*0.45,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.teal),
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(05),color: Colors.green),
 
                         //color: Colors.teal,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(right: 12.0,top: 5),
+                              padding: const EdgeInsets.only(right: 15.0,top: 20),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
